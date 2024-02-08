@@ -5,13 +5,13 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
     return (
         <div>
-          <Container className="border-b-2">
-            <nav className="flex justify-between items-center">
-                <span>iRepair</span>
+          <Container>
+            <nav className="flex justify-between items-center h-[64px]">
+                <span className="text-3xl">iRepair</span>
                 <ul className="space-x-4">
                     <NavLink to="/">Home</NavLink>
                     <NavLink to="/about">About</NavLink>
-                    <Button>login</Button>
+                    <Button className="font-semibold">Login</Button>
                 </ul>
             </nav>
           </Container>

@@ -1,12 +1,11 @@
-import Container from "@/lib/Container";
+
+import HeroSection from "./home/HeroSection";
 
 
 const Home = () => {
     return (
         <div>
-           <Container>
-            <h1>this is a home page</h1>
-           </Container>
+           <HeroSection></HeroSection>
         </div>
     );
 };
