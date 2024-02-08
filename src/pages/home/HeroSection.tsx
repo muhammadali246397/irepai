@@ -14,6 +14,19 @@ const HeroSection = () => {
     hidden:{opacity:0,y:-200},
     visible:{opacity:1, y:0,transition:{duration:0.7,type:'spring',bounce:0.4}}
   }
+
+  const imageAnimation ={
+    initial:{ scale:4,y:0,rotate:0},
+    animation:{scale:1,y:20,rotate:-34,transition:{duration:1,
+     y:{
+      duration:2,
+      repeat:Infinity,
+      repeatType:'reverse',
+      ease:'easeInOut',}
+
+    }}
+  }
+ 
     return (
         <div>
             <Container className="grid grid-cols-1 lg:grid-cols-2 h-screen justify-between place-content-center">
@@ -33,9 +46,13 @@ const HeroSection = () => {
                 </motion.div>
 
               </motion.div>
-              <div className=" w-[85%] mt-[10px] mx-auto lg:max-w-full">
-                <img className="-rotate-[34deg] h-[95%] bg-cover object-contain" src={img} alt="" />
-              </div>
+              <motion.div 
+              variants={imageAnimation}
+              initial="initial"
+              animate="animation"
+              className=" w-[85%] mt-[10px] mx-auto lg:max-w-full">
+                <img className=" h-[95%] bg-cover object-contain" src={img} alt="" />
+              </motion.div>
             </Container>
         </div>
     );
