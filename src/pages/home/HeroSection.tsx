@@ -28,7 +28,7 @@ const HeroSection = () => {
   }
  
     return (
-        <div>
+        <div className="overflow-hidden pt-16">
             <Container className="grid grid-cols-1 lg:grid-cols-2 h-screen justify-between place-content-center">
               <motion.div
               variants={intro}
