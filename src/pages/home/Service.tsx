@@ -11,9 +11,7 @@ const Service = () => {
                         Feel free to find out more below.</p>
                 </div>
                 <div className="grid grid-cols-12 gap-5">
-                    
-                        <BatteryReplacement></BatteryReplacement>
-                   
+                    <BatteryReplacement></BatteryReplacement>
                     <div className="bg-gray h-[448px] col-span-4 rounded-md"></div>
                     <div className="bg-gray h-[448px] col-span-8 rounded-md"></div>
                     <div className="bg-gray h-[448px] col-span-12 rounded-md"></div>
