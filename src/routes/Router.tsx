@@ -46,17 +46,6 @@ const router = createBrowserRouter([
             }
         ]
     }
-    // {
-    //     path:'/dashboard',
-    //     element:<AdminLayout></AdminLayout>,
-    //     children:[
-    //     {
-    //         path:'/admin',
-    //         element:<Admin></Admin>
-    //     },
-    //    
-    //     ]
-    // }
 ])
 
 export default router
